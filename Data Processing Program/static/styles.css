@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px; /* Height of the header */
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #6DF2F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-radius: 2px;
+}
+
+#HMRI-logo {
+    width: 360px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#dataset-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 500px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#drawMask-label, #augmentation-label, #both-label {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input[type="radio"] {
+    margin-left: 7px;
+    margin-right: 10px;
+}
+
+#dynamic-fieldset {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="number"],
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #a7a0a0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
