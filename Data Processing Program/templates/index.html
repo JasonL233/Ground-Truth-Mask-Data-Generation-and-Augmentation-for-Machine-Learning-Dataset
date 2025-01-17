@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>HMRI Myocardial Image Processing</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <header>
+        <img id="HMRI-logo" src="static/images/hmriLogo.png">
+    </header>
+    <main id="dataset-form">
+        <fieldset id="selection-fieldset">
+            <label id="drawMask-label" for="drawMask">
+                Draw Mask
+                <input id="drawMask" name="selection" type="radio" value="drawMask" checked>
+            </label>
+            <label id="augmentation-label" for="augmentation">
+                Data Augmentation
+                <input id="augmentation" name="selection" type="radio" value="augmentation">
+            </label>
+            <label id="both-label" for="both">
+                Both
+                <input id="both" name="selection" type="radio" value="both">
+            </label>
+        </fieldset>
+
+        <fieldset id="dynamic-fieldset">
+            
+            <div id="dynamic-field"></div>
+        </fieldset>
+    </main>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
